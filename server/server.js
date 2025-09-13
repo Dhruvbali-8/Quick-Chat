@@ -10,7 +10,6 @@ import { Server } from "socket.io";
 const app = express();
 const server = http.createServer(app);
 
-// Initialize socket.io Server ✅ FIXED
 export const io = new Server(server, {
     cors: { origin: "*" }
 });
